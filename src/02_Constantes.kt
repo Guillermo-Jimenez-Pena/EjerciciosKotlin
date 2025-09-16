@@ -1,38 +1,37 @@
 package apuntes
 
-fun main() {
+const val FICHERO = "fichero.dat"
 
-    // TIPOS DE DATOS
-    /*
-        •	Tipo texto (String), representados con comillas dobles
-        •	Tipo carácter (Char), representados con comillas simples
-        •	Tipo booleano (Boolean), con los valores true y false
-        •	Tipo real (Float de 4 bytes o Double de 8 bytes, dependiendo de la precisión).
-            En este caso, para constantes literales de tipo float se le debe indicar una f al final,
-            como en Java: var numero = 1.345f
-        •	Tipo entero (Int). Ocupa 4 bytes.
-            También tenemos los tipos Short y Byte para enteros de menor tamaño
-            (2 bytes y 1 byte, respectivamente)
-      */
+fun main(){
+    // CONSTANTES
+    // En Kotlin existen dos tipos de constantes: los valores y las constantes
 
-    // DECLARACION DE VARIABLES
+    // VALORES
+    // Los valores se declaran con la palabra val seguida del nombre del valor y su valor asociado.
 
-    // INFERENCIA DE TIPO
+    println(FICHERO)
 
-    var nombre = "Michel"
-    var numero = 123
+    val fichero = "datos.txt"
 
-    println(numero) //123
-    println(nombre) //Michel
+    val xPos: Int = 1 // Asignación junto a declaración
+    val yPos: Int   // Declaración
+    yPos = 5    // Asignación
 
-    nombre = "Guille"
+    println(xPos)
+    println(yPos)
 
-    println(nombre) //Guille
+    // yPos= 6 // Kotlin: Val cannot be reassigned
+    println(yPos)
 
-    var numero2 : Int = 17
-    var nota : Double = 8.75
-    var letra : Char = 'A'
-    var existe : Boolean = true
+    // CONSTANTES
+    // Las constantes se declaran anteponiendo const a la construcción anterior.
 
+        //  const val FICHERO = "datos.dat" //  deben declararse fuera del ámbito
 
-}
+    // DIFERENCIAS
+
+    // Las constantes (const) deben declararse fuera del ámbito de cualquier actividad.
+    // Además, los valores pueden asignarse en tiempo de ejecución,
+    // mientras que las constantes deben asignarse en tiempo de compilación.
+
+} //
