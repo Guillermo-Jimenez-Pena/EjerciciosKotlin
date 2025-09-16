@@ -4,8 +4,8 @@ fun main(){
 
     // CONVERSIONES EXPLICITAS
 
-    val level: Short = 75
-//    val first: Int = level  //Type mismatch: inferred type is Short but Int was expected
+    val level: Short = 75 // val first: Int = level
+    // Type mismatch: inferred type is Short but Int was expected
 
     // Podrías esperar una conversión implícita de tipo,
     // ya que Short es un entero más pequeño que Int. Sin embargo no es el caso.
