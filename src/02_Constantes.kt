@@ -1,14 +1,38 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
-    val name = "Kotlin"
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    println("Hello, " + name + "!")
+package apuntes
 
-    for (i in 1..5) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        println("i = $i")
-    }
+fun main() {
+
+    // TIPOS DE DATOS
+    /*
+        •	Tipo texto (String), representados con comillas dobles
+        •	Tipo carácter (Char), representados con comillas simples
+        •	Tipo booleano (Boolean), con los valores true y false
+        •	Tipo real (Float de 4 bytes o Double de 8 bytes, dependiendo de la precisión).
+            En este caso, para constantes literales de tipo float se le debe indicar una f al final,
+            como en Java: var numero = 1.345f
+        •	Tipo entero (Int). Ocupa 4 bytes.
+            También tenemos los tipos Short y Byte para enteros de menor tamaño
+            (2 bytes y 1 byte, respectivamente)
+      */
+
+    // DECLARACION DE VARIABLES
+
+    // INFERENCIA DE TIPO
+
+    var nombre = "Michel"
+    var numero = 123
+
+    println(numero) //123
+    println(nombre) //Michel
+
+    nombre = "Guille"
+
+    println(nombre) //Guille
+
+    var numero2 : Int = 17
+    var nota : Double = 8.75
+    var letra : Char = 'A'
+    var existe : Boolean = true
+
+
 }
