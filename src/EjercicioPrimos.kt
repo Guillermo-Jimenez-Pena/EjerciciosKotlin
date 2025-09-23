@@ -67,7 +67,7 @@ fun esPrimo(numero:Int):Boolean{
 fun encuentraPrimosGemelos(numero:Int){
     for(i in 2..numero-1){
         if(esPrimo(i) && esPrimo(i+2)){
-            println("($i, + " + (i + 2) + ")")
+            println("($i, " + (i + 2) + ")")
         }
     }
 }
