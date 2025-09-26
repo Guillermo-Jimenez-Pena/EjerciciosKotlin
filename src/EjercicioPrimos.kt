@@ -1,7 +1,5 @@
 package apuntes
 
-import kotlin.math.sqrt
-
 fun main() {
     var opcion:Int
 

@@ -1,4 +1,4 @@
- package apuntes
+package apuntes
 
 fun main() {
     val edades = listOf(1, 2, 3, 4, 5, 6, 7)
